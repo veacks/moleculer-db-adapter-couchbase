@@ -1,5 +1,5 @@
 {
-  "name": "moleculer-couchbase",
+  "name": "moleculer-db-adapter-couchbase",
   "version": "0.0.1",
   "description": "Couchbase Connector for Moleculer",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/veacks/moleculer-couchbase.git"
+    "url": "git+https://github.com/veacks/moleculer-db-adapter-couchbase.git"
   },
   "keywords": [
     "couchbase",
@@ -28,9 +28,9 @@
   "author": "Valentin Dubois",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/veacks/moleculer-couchbase/issues"
+    "url": "https://github.com/veacks/moleculer-db-adapter-couchbase/issues"
   },
-  "homepage": "https://github.com/veacks/moleculer-couchbase#readme",
+  "homepage": "https://github.com/veacks/moleculer-db-adapter-couchbase#readme",
   "devDependencies": {
     "benchmarkify": "^2.1.0",
     "coveralls": "^3.0.0",
