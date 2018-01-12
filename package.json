@@ -1,0 +1,60 @@
+{
+  "name": "moleculer-couchbase",
+  "version": "0.0.1",
+  "description": "Couchbase Connector for Moleculer",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run git-hook",
+    "prepush": "npm run git-hook",
+    "git-hook": "npm run lint -s",
+    "dev": "nodemon examples/index.js",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "lint": "eslint --ext=.js src test",
+    "deps": "npm-check -u",
+    "readme": "node node_modules/moleculer-docgen/index.js -t README.md src/index.js",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veacks/moleculer-couchbase.git"
+  },
+  "keywords": [
+    "couchbase",
+    "moleculer",
+    "microservice",
+    "odm"
+  ],
+  "author": "Valentin Dubois",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veacks/moleculer-couchbase/issues"
+  },
+  "homepage": "https://github.com/veacks/moleculer-couchbase#readme",
+  "devDependencies": {
+    "benchmarkify": "^2.1.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.15.0",
+    "husky": "^0.14.3",
+    "jest": "^22.0.6",
+    "jest-cli": "^22.0.6",
+    "lolex": "^2.3.1",
+    "moleculer": "^0.11.9",
+    "moleculer-docgen": "^0.2.1",
+    "nodemon": "^1.14.11",
+    "npm-check": "^5.5.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/services/"
+    ]
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "dependencies": {
+    "couchbase": "^2.4.3"
+  }
+}
