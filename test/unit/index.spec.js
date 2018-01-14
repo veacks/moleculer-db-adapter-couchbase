@@ -59,7 +59,7 @@ describe("Test CouchbaseAdapter", () => {
 	});
 
 	const opts = {
-		dialect: "sqlite"
+		cluster: "couchbase://localhost/"
 	};
 	const adapter = new CouchbaseAdapter(opts);
 
